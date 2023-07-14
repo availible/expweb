@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Square</title>
+</head>
+<body>
+    <h1>Calculate Square</h1>
+    <p>a=<input type="number" id="a"></p>
+    <p>b=<input type="number" id="b"></p>
+    <p>c=<input type="number" id="c"></p>
+    <button onclick="cal()">Submit</button>
+    <p>根1=<span id="x1"></span></p>
+    <p>根2=<span id="x2"></span></p>
+
+    <script>
+        function cal(){
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            var c = parseInt(document.getElementById("c").value)
+            var x1=(-b+Math.sqrt(b*b-4*a*c))/2*a
+            var x2=(-b-Math.sqrt(b*b-4*a*c))/2*a
+            document.getElementById("x1").innerHTML=x1
+            document.getElementById("x2").innerHTML=x2
+        }
+    </script>
+
+    <br>
+    <p><span><a href="./index.html">go back</a></span></p>
+</body>
+</html>
