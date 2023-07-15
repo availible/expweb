@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to book seller</title>
+</head>
+<body>
+    <h1>Welcome to book seller</h1>
+    <p>You are Welcome.</p>
+    <form action="Book">
+        <h2>Books</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>book</th>
+                    <th>publisher</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web technology</td>
+                    <td>Spring press</td>
+                    <td>$5.0</td>
+                    <td><input type="number" class="quantity"></td>
+                </tr>
+                <tr>
+                    <td>mathematics</td>
+                    <td>ACM press</td>
+                    <td>$6.2</td>
+                    <td><input type="number" class="quantity"></td>
+                </tr>
+                <tr>
+                    <td>principle of OS</td>
+                    <td>Science press</td>
+                    <td>$10</td>
+                    <td><input type="number" class="quantity"></td>
+                </tr>
+                <tr>
+                    <td>Theory of matrix</td>
+                    <td>High education press</td>
+                    <td>$7.8</td>
+                    <td><input type="number" class="quantity"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Payment method</h2>
+        <fieldset>
+            <label>
+                <input type="radio" name="payment" value="cash">
+                Cash
+            </label><br>
+            <label>
+                <input type="radio" name="payment" value="cheque">
+                Cheque
+            </label><br>
+            <label>
+                <input type="radio" name="payment" value="credit-card">
+                Credit Card
+            </label><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
